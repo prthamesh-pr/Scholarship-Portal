@@ -16,7 +16,6 @@ const ContactUsPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
     console.log(formData);
     setShowAlert(true);
     setFormData({ name: '', email: '', message: '' });

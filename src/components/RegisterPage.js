@@ -10,16 +10,16 @@ const RegisterPage = () => {
     phoneNumber: '',
     password: '',
     confirmPassword: '',
-    userType: '', // Added userType field
-    collegeName: '', // College name for College userType
+    userType: '', 
+    collegeName: '', 
   });
 
   const [collegeList, setCollegeList] = useState([
-    'Harvard University',
-    'Stanford University',
+    'JJMCOE',
+    'KPIT',
     'MIT',
     'Oxford University',
-    // Add more colleges here
+    'PVPIT'
   ]);
 
   const [showToast, setShowToast] = useState(false);

@@ -7,7 +7,7 @@ const LoginPage = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-    userType: 'student', // Default to student
+    userType: 'student', 
   });
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
@@ -32,11 +32,10 @@ const LoginPage = () => {
           if (
             userData.email === formData.email &&
             userData.password === formData.password &&
-            userData.userType === formData.userType // Check user type
+            userData.userType === formData.userType
           ) {
             userFound = true;
             showToastMessage('Login successful!', 'success');
-            // Typically, you'd set the user session or redirect to a dashboard
             console.log('Login successful!');
             return;
           }
@@ -79,8 +78,7 @@ const LoginPage = () => {
                     type="email"
                     name="email"
                     value={formData.email}
-                    onChange={handleChange}
-                    required
+                    onChange={handleChange}                    
                     placeholder="Enter your email address"
                   />
                 </Form.Group>

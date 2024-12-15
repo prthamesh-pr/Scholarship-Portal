@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { FaGraduationCap, FaBook, FaUniversity } from 'react-icons/fa';
-import '../HomePage.css'; // You'll need to create this CSS file
+import '../HomePage.css'; 
 
 const HomePage = () => {
   return (
